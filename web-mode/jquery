@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: jQuery
+# key: jquery
+# binding: direct-keybinding
+# --
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>

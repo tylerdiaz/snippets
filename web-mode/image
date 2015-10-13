@@ -1,0 +1,7 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: rails image
+# key: image
+# binding: direct-keybinding
+# condition: (string= (td/current-buffer-extension) "erb")
+# --
+<%= image_tag "$1", class: "$2" %>

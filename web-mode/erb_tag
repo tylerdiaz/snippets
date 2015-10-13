@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: ERB tag
+# binding: s-<
+# condition: (string= (td/current-buffer-extension) "erb")
+# --
+<%= `(yas/selected-text)`$0 %>

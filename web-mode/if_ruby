@@ -1,0 +1,9 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: If (ruby)
+# key: if
+# binding: direct-keybinding
+# condition: (string= (td/current-buffer-extension) "erb")
+# --
+<%- if ${1:condition} %>
+
+<%- end %>

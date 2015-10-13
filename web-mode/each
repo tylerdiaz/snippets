@@ -1,0 +1,9 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: ruby each
+# key: each
+# binding: direct-keybinding
+# condition: (string= (td/current-buffer-extension) "erb")
+# --
+<% ${1:@${2:val}}.each do |${3:val}| %>
+   <%= $3.attr %>
+<% end %>
