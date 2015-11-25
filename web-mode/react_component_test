@@ -1,0 +1,25 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: Test React component
+# key: rt
+# binding: direct-keybinding
+# condition: (string= (td/current-buffer-extension) "js")
+# --
+import React from 'react';
+import ReactDOM from 'react-dom';
+import TestUtils from 'react-addons-test-utils';
+import Product from './factories/product';
+import $ from 'jquery';
+import _ from 'lodash';
+import expect from './utils/expect';
+
+const ${1:ReactClass} = require('${2:../src/components/}${1:$(string-inflection-underscore-function yas-text)}');
+
+describe('Category Page', () =>{
+  const \$${1:$(string-inflection-camelcase-function yas-text)} = $(ReactDOM.findDOMNode(TestUtils.renderIntoDocument(
+     <${1:$(string-inflection-camelcase-function yas-text)} />
+  )));
+
+  it('$3', () => {
+    expect().to.eq();
+  });
+});

@@ -1,0 +1,21 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: React Class
+# key: rc
+# binding: direct-keybinding
+# condition: (string= (td/current-buffer-extension) "jsx")
+# --
+import React from 'react';
+
+module.exports = React.createClass({
+  propTypes: {
+    $1
+  },
+
+  render() {
+    return (
+      <div>
+        $0
+      </div>
+    );
+  }
+});
